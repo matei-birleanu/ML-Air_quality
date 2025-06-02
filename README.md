@@ -166,5 +166,5 @@ Models implemented and evaluated:
 
 > You can include these visuals in your actual GitHub README using Markdown image syntax:
 ```markdown
-![MLP Accuracy Curve](images/curba_acc_mlp.png.png)
-![MLP Loss Curve](images/curba_eroare_mlp.png.png)
+![MLP Accuracy Curve](images/curba_acc_mlp.png)
+![MLP Loss Curve](images/curba_eroare_mlp.png)

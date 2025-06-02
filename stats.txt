@@ -1,0 +1,131 @@
+========================================
+DECISION TREES
+========================================
+
+Test accuracy : 0.997
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1987
+           1       1.00      0.82      0.90        38
+           2       1.00      1.00      1.00      1846
+           3       0.99      1.00      0.99       446
+           4       0.99      1.00      1.00       318
+           5       0.88      0.88      0.88        58
+
+    accuracy                           1.00      4693
+   macro avg       0.98      0.95      0.96      4693
+weighted avg       1.00      1.00      1.00      4693
+
+Decision Tree hyperparameters & learned stats:
+  param_max_depth          : 5
+  param_min_samples_leaf   : 10
+  param_criterion          : entropy
+  param_class_weight       : balanced
+  learned_depth            : 5
+  learned_n_nodes          : 27
+  learned_n_leaves         : 14
+
+========================================
+RANDOM FOREST
+========================================
+
+Test accuracy : 0.994
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1987
+           1       1.00      0.82      0.90        38
+           2       1.00      1.00      1.00      1846
+           3       1.00      0.96      0.98       446
+           4       0.94      1.00      0.97       318
+           5       0.89      0.95      0.92        58
+
+    accuracy                           0.99      4693
+   macro avg       0.97      0.95      0.96      4693
+weighted avg       0.99      0.99      0.99      4693
+
+Random Forest hyperparameters & learned stats:
+  param_n_estimators       : 100
+  param_max_depth          : 5
+  param_min_samples_leaf   : 10
+  param_criterion          : entropy
+  param_class_weight       : balanced
+  param_max_samples        : 0.8
+  param_max_features       : sqrt
+  learned_avg_depth        : 5.0
+  learned_avg_n_nodes      : 31.84
+  learned_avg_n_leaves     : 16.42
+
+Confusion Matrix (count):
+[[1987    0    0    0    0    0]
+ [   0   31    0    0    0    7]
+ [   0    0 1846    0    0    0]
+ [   0    0    0  426   20    0]
+ [   0    0    0    0  318    0]
+ [   0    0    0    1    2   55]]
+
+Confusion Matrix (normalized by true):
+[[1.    0.    0.    0.    0.    0.   ]
+ [0.    0.816 0.    0.    0.    0.184]
+ [0.    0.    1.    0.    0.    0.   ]
+ [0.    0.    0.    0.955 0.045 0.   ]
+ [0.    0.    0.    0.    1.    0.   ]
+ [0.    0.    0.    0.017 0.034 0.948]]
+
+
+
+
+========================================
+LOGISTIC REGRESSION
+========================================
+
+Final train NLL: -4.1192
+Final test  NLL: -4.1881
+Final train ACC: 0.1719
+Final test  ACC: 0.1766
+Accuracy : 0.590
+
+Raport:
+              precision    recall  f1-score   support
+
+           0       0.67      0.59      0.63      2401
+           1       0.54      1.00      0.24      1074
+           2       0.53      0.31      0.63      3799
+           3       0.63      0.63      0.77       218
+           4       0.31      0.31      0.44       437
+           5       0.53      0.61      0.42       58
+
+    accuracy                           0.59      7929
+   macro avg       0.63      0.52      0.50      7929
+weighted avg       0.63      0.43      0.47      7929
+
+Exemple de predicții (primele 10):
+Probabilități: 0.726, 0.999, 0.996, 0.993, 0.997, 0.997, 0.877, 0.945, 0.999, 0.995
+Predicții:     1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+Adevărate:     0, 2, 2, 3, 2, 2, 0, 0, 2, 2
+
+
+========================================
+Multi-Layered Perceptron (MLP)
+========================================
+
+MLP accuracy: 0.999
+
+Classification report (MLP):
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1987
+           1       1.00      0.82      0.90        38
+           2       1.00      1.00      1.00      1846
+           3       1.00      1.00      1.00       446
+           4       1.00      1.00      1.00       318
+           5       0.89      1.00      0.94        58
+
+    accuracy                           1.00      4693
+   macro avg       0.98      0.97      0.97      4693
+weighted avg       1.00      1.00      1.00      4693
+
+

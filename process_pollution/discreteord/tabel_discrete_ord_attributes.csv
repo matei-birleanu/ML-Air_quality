@@ -1,0 +1,3 @@
+,Country,City,CO_Category,Ozone_Category,NO2_Category,PM25_Category,Emissions,AQI_Category
+count,18421.0,18770.0,16877.0,18770.0,18770.0,18770.0,18770.0,18770.0
+unique,175.0,18770.0,2.0,5.0,2.0,6.0,6.0,6.0

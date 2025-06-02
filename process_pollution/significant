@@ -1,0 +1,25 @@
+              var1            var2          chi2        p_value  dof
+1          Country     CO_Category    248.180170   1.279980e-04  172
+2          Country  Ozone_Category   7475.596263   0.000000e+00  696
+3          Country    NO2_Category   1617.109011  3.773165e-232  174
+4          Country   PM25_Category  14686.733315   0.000000e+00  870
+5          Country       Emissions  14686.733315   0.000000e+00  870
+6          Country    AQI_Category  15054.287629   0.000000e+00  870
+13     CO_Category  Ozone_Category    199.497084   4.819449e-42    4
+15     CO_Category   PM25_Category     71.093755   6.066628e-14    5
+16     CO_Category       Emissions     71.093755   6.066628e-14    5
+17     CO_Category    AQI_Category    100.435294   4.278661e-20    5
+19  Ozone_Category   PM25_Category   3646.560693   0.000000e+00   20
+20  Ozone_Category       Emissions   3646.560693   0.000000e+00   20
+21  Ozone_Category    AQI_Category   9525.414418   0.000000e+00   20
+22    NO2_Category   PM25_Category    336.513784   1.400069e-70    5
+23    NO2_Category       Emissions    336.513784   1.400069e-70    5
+24    NO2_Category    AQI_Category    294.672329   1.399454e-61    5
+25   PM25_Category       Emissions  93850.000000   0.000000e+00   25
+26   PM25_Category    AQI_Category  82860.803012   0.000000e+00   25
+27       Emissions    AQI_Category  82860.803012   0.000000e+00   25
+
+
+Prin testul statistic Chi-Pătrat verificăm dacă două coloane categorice sunt independente (necorelate) sau nu. 
+Valorile foarte mici ale „p_value” (sub 0.05) indică dependenţă puternică între acele perechi de variabile și, deci, 
+ posibilă redundanţă în modelul de predicție (putem arunca una din ele fără pierdere de informație semnificativă).

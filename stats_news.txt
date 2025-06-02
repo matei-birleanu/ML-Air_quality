@@ -1,0 +1,104 @@
+========================================
+DECISION TREES
+========================================
+Test accuracy : 0.519
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+           0       0.57      0.56      0.56      2401
+           1       0.33      0.35      0.34      1074
+           2       0.82      0.51      0.63      3799
+           3       0.16      0.83      0.26       218
+           4       0.31      0.66      0.42       437
+
+    accuracy                           0.52      7929
+   macro avg       0.44      0.58      0.44      7929
+weighted avg       0.63      0.52      0.55      7929
+
+Decision Tree hyperparameters & learned stats:
+  param_max_depth          : 5
+  param_min_samples_leaf   : 10
+  param_criterion          : entropy
+  param_class_weight       : balanced
+  learned_depth            : 5
+  learned_n_nodes          : 63
+  learned_n_leaves         : 32
+
+
+========================================
+Random Forest
+========================================
+Random Forest hyperparameters & learned stats:
+  param_n_estimators       : 300
+  param_max_depth          : 15
+  param_min_samples_leaf   : 2
+  param_criterion          : entropy
+  param_class_weight       : balanced
+  param_max_samples        : 0.8
+  param_max_features       : sqrt
+  learned_avg_depth        : 15.0
+  learned_avg_n_nodes      : 6076.606666666667
+  learned_avg_n_leaves     : 3038.8033333333333
+
+Test accuracy : 0.648
+
+Classification report (test):
+              precision    recall  f1-score   support
+
+           0       0.67      0.59      0.62      2401
+           1       0.38      0.29      0.33      1074
+           2       0.70      0.86      0.77      3799
+           3       0.79      0.31      0.44       218
+           4       0.31      0.17      0.22       437
+
+    accuracy                           0.65      7929
+   macro avg       0.57      0.44      0.48      7929
+weighted avg       0.63      0.65      0.63      7929
+
+
+========================================
+Logistic Regression
+========================================
+Accuracy : 0.590
+
+Raport:
+              precision    recall  f1-score   support
+
+           0       0.67      0.59      0.63      2401
+           1       0.54      1.00      0.24      1074
+           2       0.53      0.31      0.63      3799
+           3       0.63      0.63      0.77       218
+           4       0.31      0.31      0.44       437
+
+    accuracy                           0.59      7929
+   macro avg       0.63      0.52      0.50      7929
+weighted avg       0.63      0.43      0.47      7929
+
+
+========================================
+Multi-Layered Perceptron (MLP)
+========================================
+
+MLP accuracy: 0.661
+
+Classification report (MLP):
+              precision    recall  f1-score   support
+
+           0       0.70      0.57      0.63      2401
+           1       0.44      0.42      0.43      1074
+           2       0.71      0.86      0.78      3799
+           3       0.58      0.27      0.37       218
+           4       0.36      0.24      0.28       437
+
+    accuracy                           0.66      7929
+   macro avg       0.56      0.47      0.50      7929
+weighted avg       0.65      0.66      0.65      7929
+
+
+
+
+
+
+
+
